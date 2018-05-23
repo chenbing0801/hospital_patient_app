@@ -4,19 +4,19 @@
         <!--<x-header slot="header" style="width:100%;position:absolute;left:0;top:0;z-index:100;"></x-header>-->
         <!--<x-button type="primary">primary</x-button>-->
         <tabbar slot="bottom">
-            <tabbar-item selected>
+            <tabbar-item selected link="/Home/tab1/T1">
                 <!--<img slot="icon" src="../assets/demo/icon_nav_button.png">-->
                 <span slot="label">Wechat</span>
             </tabbar-item>
-            <tabbar-item show-dot>
+            <tabbar-item show-dot link="/Home/tab2/T2">
                 <!--<img slot="icon" src="../assets/demo/icon_nav_msg.png">-->
                 <span slot="label">Message</span>
             </tabbar-item>
-            <tabbar-item link="/component/demo">
+            <tabbar-item link="/Home/tab3/T3">
                 <!--<img slot="icon" src="../assets/demo/icon_nav_article.png">-->
                 <span slot="label">Explore</span>
             </tabbar-item>
-            <tabbar-item badge="2">
+            <tabbar-item badge="2" link="/Home/tab4/T4">
                 <!--<img slot="icon" src="../assets/demo/icon_nav_cell.png">-->
                 <span slot="label">News</span>
             </tabbar-item>

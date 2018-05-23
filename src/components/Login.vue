@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%; height:100%;">
+  <div>
     <div class="m-center">
         <img class="logo" src="../assets/logo.png">
         <h1>登录</h1>
@@ -11,7 +11,7 @@
     </group>
 
     <!--<group>-->
-        <x-button style="width: 50%; margin-top: 20px" type="primary" action-type="button" @click.native="login">登录</x-button>
+        <x-button style="width: 80%; margin-top: 20px" type="primary" action-type="button" @click.native="login">登录</x-button>
     <!--</group>-->
   </div>
 </template>
@@ -34,18 +34,13 @@ export default {
   methods: {
     login () {
       let vue = this
-      vue.$router.push({name: 'Home', params: {}})
+      vue.$router.push({name: 'T1', params: {}})
     }
   }
 }
 </script>
 
 <style>
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
 .m-center{
   margin-top: 60px;
   text-align: center;

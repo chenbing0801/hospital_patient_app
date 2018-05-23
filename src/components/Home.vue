@@ -1,23 +1,22 @@
 <template>
-  <div style="width:100%; height:100%;">
-    <top></top>
-    <hr/>
+  <div id="Init">
+    <top class="top"></top>
     <!--<divider>-</divider>-->
-    <div>content</div>
-    <bottom></bottom>
+    <transition>
+      <router-view/>
+    </transition>
+    <bottom class="bottom"></bottom>
   </div>
 </template>
 
 <script>
 import bottom from './views/Bottom'
 import top from './views/Top'
-import {Divider} from 'vux'
 
 export default {
   components: {
     bottom,
-    top,
-    Divider
+    top
   }
 }
 </script>
@@ -27,5 +26,9 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+#Init .top{margin-bottom: 46px;}
+#Init .bottom{
+  margin-top: 60px;
 }
 </style>
