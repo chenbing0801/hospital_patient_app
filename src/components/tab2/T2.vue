@@ -1,16 +1,18 @@
 <template>
     <div id="UserInfo">
       t2
+      <icon type="success"></icon>
     </div>
 </template>
 
 <script>
-import {Group, Cell, Blur} from 'vux'
+import {Group, Cell, Blur, Icon} from 'vux'
 export default {
   components: {
     Group,
     Cell,
-    Blur
+    Blur,
+    Icon
   },
   data () {
     return {

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/Login'
+import Register from '@/components/Register'
 import Home from '@/components/Home'
 import T1 from '@/components/tab1/T1'
 import T2 from '@/components/tab2/T2'
@@ -16,6 +17,11 @@ export default new Router({
       path: '/',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/Register',
+      name: 'Register',
+      component: Register
     },
     {
       path: '/Home',

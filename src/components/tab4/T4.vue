@@ -1,6 +1,30 @@
 <template>
     <div id="UserInfo">
-      t4
+      <blur :blur-amount=40 :url="url">
+        <p class="center"><img src="../../assets/logo.png"></p>
+      </blur>
+
+      <group style="text-align: left">
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+        <cell title="title" value="value"></cell>
+      </group>
+
+      <group>
+        <cell title="version" value="1.0.0"></cell>
+      </group>
     </div>
 </template>
 
@@ -14,7 +38,7 @@ export default {
   },
   data () {
     return {
-      url: '../../../assets/logo.png'
+      url: '../../assets/logo.png'
     }
   },
   created () {
